@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background-color: skyblue;
+				padding: 30px;
+				color : #fff;
+			}
+
+			h1 { font-size: 48px; }
+			p, ul { font-size: 24px; text-align: center;}
+
+		</style>
+	</head>
+	<body>
+		<h1> Contact  : </h1>
+		<p><strong> <%= name %> </strong></p>
+		<p> <code>email at : <%= email %> </code></p>
+		<h2> Hobbies : </h2>
+		<ul>
+			<% data.hobbies.forEach(function(item){ %>
+				<li> <%= item %></li>
+			<% }) %>
+		</ul>
+	</body>
+</html>
